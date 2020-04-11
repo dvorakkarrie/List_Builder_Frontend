@@ -1,5 +1,5 @@
 # Description:
- * The app allows users to create, maintain, and share lists.
+The app allows users to create, maintain, and share lists.
 
 # Wireframe:
 
@@ -13,8 +13,8 @@
  * role-based security (did not learn in class) - as defined in user stories
  * social-authenticate
 
-
 # Components
+[Screen mock](https://wireframe.cc/8DJyT8)
 * HomePage
 * LoginSignupLogout
 * User
@@ -28,35 +28,36 @@
 * Share (from List)
 
 # Data Models
+[ERD](https://dbdiagram.io/d/5e924af039d18f5553fd74eb)
 * users
- - user_id (pk)
- - type (admin, general_user)
- - name
- - email_address
- - create_date
- - update_date
- - photo_url
+  - user_id (pk)
+  - type (admin, general_user)
+  - name
+  - email_address
+  - create_date
+  - update_date
+  - photo_url
 * list
- - list_id (pk)
- - list type
- - user id
- - status (open, complete)
- - create_date
- - update_date
- - image_url
+  - list_id (pk)
+  - list type
+  - user id
+  - status (open, complete)
+  - create_date
+  - update_date
+  - image_url
 * item
- - item_id (pk)
- - item_type (ingredient, to_do)
- - user_id
- - status
- - create_date
- - update_date
- - quantity
- - image_url
+  - item_id (pk)
+  - item_type (ingredient, to_do)
+  - user_id
+  - status
+  - create_date
+  - update_date
+  - quantity
+  - image_url
 * shared_list
- - owner_user_id
- - list_id
- - share_user_id
+  - owner_user_id
+  - list_id
+  - share_user_id
 
 # User Stories
 * As a user, I can create a list of to dos.
